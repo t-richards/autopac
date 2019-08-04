@@ -1,0 +1,14 @@
+[Unit]
+Description=Automatically download package updates
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/nice -n 19 /usr/bin/pacman -Syyuwq --noconfirm
+KillMode=process
+KillSignal=SIGINT
+
+[Install]
+WantedBy=multi-user.target
+
