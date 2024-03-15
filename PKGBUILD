@@ -11,7 +11,7 @@ install=autopac.install
 source=(autopac.timer
         autopac.service)
 sha256sums=('a7d198e4ad9075b41a7583403ffa31e415cd7e428cb03f762fac482e3e948673'
-            '5de1b6d33ed1786e172e576d50c6d4ca1843cf91fc9308e95d288400735d7305')
+            '2d0d649ff5691bd4fc32efcd5ad7f9099de62062f42be2da46c680c560346abb')
 
 package() {
   install -d -m 755 "$pkgdir/usr/lib/systemd/system/"
